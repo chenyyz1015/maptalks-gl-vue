@@ -1,0 +1,25 @@
+{
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.inlineSuggest.enabled": true,
+  "editor.cursorBlinking": "expand",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.guides.bracketPairs": "active",
+  "editor.suggest.insertMode": "replace",
+  "editor.mouseWheelZoom": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.ts": "always",
+    "source.fixAll.eslint": "always",
+    "source.organizeImports": "always"
+  },
+  "eslint.enable": true,
+  "GitCommitPlugin.ShowEmoji": false,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[svg]": {
+    "editor.defaultFormatter": "jock.svg"
+  },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "template-string-converter.autoRemoveTemplateString": true
+}

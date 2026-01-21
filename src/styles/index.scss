@@ -1,0 +1,11 @@
+// 自定义变量
+:root {
+  --primary-color: #2f54eb;
+  --font-size: 14px;
+  --font-size-small: calc(var(--font-size) - 2px);
+  --font-size-smaller: calc(var(--font-size) - 4px);
+  --font-size-large: calc(var(--font-size) + 2px);
+  --font-size-larger: calc(var(--font-size) + 4px);
+  --font-size-largest: calc(var(--font-size) + 6px);
+  --border-radius: 0;
+}

@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "Vue.volar",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "EditorConfig.EditorConfig",
+    "jock.svg",
+    "redjue.git-commit-plugin",
+    "meganrogge.template-string-converter"
+  ]
+}
