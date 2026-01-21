@@ -7,32 +7,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### ✨ Added
-
-- *****: 初始化项目 ([80ac563](https://github.com/chenyyz1015/maptalks-gl-vue/commit/80ac56353ce8a9997e999570e55f4a73360d16eb))
-
-### 📝 Documentation
-
-- **contributing**: 贡献指南更新 ([fbe2b28](https://github.com/chenyyz1015/maptalks-gl-vue/commit/fbe2b282600a43a65ec820e5ad56b2ef181b20c8))
-- changelog update ([3339a64](https://github.com/chenyyz1015/maptalks-gl-vue/commit/3339a64ebd331041bdcaef9e16537368ac9838a4))
-- *****: 同步README、贡献指南、更新日志 ([8348fe2](https://github.com/chenyyz1015/maptalks-gl-vue/commit/8348fe292244c01ac1051136e4d098ec93e5c249))
-
-### 👷 CI/CD
-
-- **github actions**:  release配置文件调整 ([936ade8](https://github.com/chenyyz1015/maptalks-gl-vue/commit/936ade8c7f489fafdad2625c4e8686e796790c8f))
-- add GitHub Actions release workflow ([a65c591](https://github.com/chenyyz1015/maptalks-gl-vue/commit/a65c5917d8d5ed662ad32b72bac49caac792987a))
-
-### 🔧 Chores
-
-- **git**: 删除git post-commit hook ([87013fb](https://github.com/chenyyz1015/maptalks-gl-vue/commit/87013fb50dacc3d7dd5a92656208adbb4e7e45a7))
-- **package**: 版本调整 ([8e13ad1](https://github.com/chenyyz1015/maptalks-gl-vue/commit/8e13ad1500b9d68b9356035f6d8c15a5edd10c5c))
-- **release**: v1.0.1 ([be6d7f8](https://github.com/chenyyz1015/maptalks-gl-vue/commit/be6d7f8d8ee15804425fd23fa19dd0515d708deb))
-
-### 📌 Other Changes
-
-- Initial commit ([d9b1d4d](https://github.com/chenyyz1015/maptalks-gl-vue/commit/d9b1d4daf5d3bef2832ef9cff4bc4dce6180edee))
-
-
 ## [1.0.0] - 2024-01-22
 
 ### Added
