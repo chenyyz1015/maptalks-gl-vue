@@ -26,5 +26,8 @@ export default {
     "header-max-length": [2, "always", 100],
     "body-leading-blank": [1, "always"],
     "footer-leading-blank": [1, "always"]
-  }
+  },
+  ignores: [
+    (message: string) => message.startsWith("Version Packages") // 忽略 changeset alpha/beta 版本 commit
+  ]
 };
