@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.5.0-alpha.0
+## 1.5.0
 
 ### Minor Changes
 
