@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.6.0-alpha.0
+
+### Minor Changes
+
+- f3a998b: maptalks-gl-vue@1.6.0正式发布
+
 ## 1.5.0
 
 ### Minor Changes
