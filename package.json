@@ -22,12 +22,15 @@
     "CHANGELOG.md",
     "LICENSE"
   ],
+  "sideEffects": false,
   "scripts": {
     "build": "vue-tsc && vite build",
     "example:dev": "cd example && npm run dev",
     "example:build": "cd example && npm run build",
     "example:preview": "cd example && npm run preview",
-    "changelog": "node scripts/generate-changelog.js",
+    "changeset": "changeset",
+    "version": "changeset version",
+    "release": "changeset publish",
     "prepare": "husky install",
     "prepublishOnly": "npm run build"
   },
@@ -41,6 +44,7 @@
     "lodash-es": "^4.17.21"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.8",
     "@commitlint/cli": "^18.4.4",
     "@commitlint/config-conventional": "^18.4.4",
     "@types/lodash-es": "^4.17.12",
