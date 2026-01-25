@@ -4,7 +4,5 @@
   "initialVersions": {
     "maptalks-gl-vue": "1.4.0"
   },
-  "changesets": [
-    "odd-mice-greet"
-  ]
+  "changesets": ["thick-rockets-agree"]
 }
