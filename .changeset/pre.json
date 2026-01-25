@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "maptalks-gl-vue": "1.4.0"
+  },
+  "changesets": [
+    "odd-mice-greet"
+  ]
+}

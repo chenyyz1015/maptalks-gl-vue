@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.5.0-beta.0
+
+### Minor Changes
+
+- f8cd815: maptalks-gl-vue@1.5.0正式发布
+
 ## 1.4.0
 
 ### Minor Changes
