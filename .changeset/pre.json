@@ -2,9 +2,7 @@
   "mode": "pre",
   "tag": "alpha",
   "initialVersions": {
-    "maptalks-gl-vue": "1.1.0"
+    "maptalks-gl-vue": "1.0.0"
   },
-  "changesets": [
-    "cyan-kings-end"
-  ]
+  "changesets": ["cyan-kings-end"]
 }
