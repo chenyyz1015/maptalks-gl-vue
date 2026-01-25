@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "beta",
+  "initialVersions": {
+    "maptalks-gl-vue": "1.5.0"
+  },
+  "changesets": [
+    "thick-rockets-agree"
+  ]
+}
