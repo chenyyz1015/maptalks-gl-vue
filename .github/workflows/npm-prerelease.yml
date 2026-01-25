@@ -53,8 +53,11 @@ jobs:
         if: steps.changesets.outputs.published == 'true'
         id: pack
         run: |
-          FILE=$(npm pack)
-          echo "TGZ_PATH=$FILE" >> $GITHUB_OUTPUT
+          # 使用 --silent 减少干扰，并只取最后一行作为文件名
+          TGZ_FILE=$(npm pack --silent | tail -n 1)
+          echo "TGZ_PATH=$TGZ_FILE" >> $GITHUB_OUTPUT
+
+          # 获取版本号
           V=$(node -p "require('./package.json').version")
           echo "REAL_TAG=v$V" >> $GITHUB_OUTPUT
 
@@ -64,7 +67,7 @@ jobs:
         with:
           tag_name: ${{ steps.pack.outputs.REAL_TAG }}
           generate_release_notes: true
-          prerelease: true # 明确标记为预发布版本
+          prerelease: true
           files: ${{ steps.pack.outputs.TGZ_PATH }}
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
