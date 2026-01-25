@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.0
+
+### Minor Changes
+
+- 0934c63: maptalks-gl-vue@1.3.0正式发布
+
 ## 1.3.0-alpha.0
 
 ### Minor Changes
