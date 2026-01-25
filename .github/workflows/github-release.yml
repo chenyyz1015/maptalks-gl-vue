@@ -14,10 +14,27 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://registry.npmjs.org
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Create npm Tarball
+        id: pack
+        run: |
+          TGZ_FILE=$(npm pack)
+          echo "TGZ_PATH=$TGZ_FILE" >> $GITHUB_OUTPUT
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ github.ref_name }}
           generate_release_notes: true
+          files: |
+            ${{ steps.pack.outputs.TGZ_PATH }}
         env:
           GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}

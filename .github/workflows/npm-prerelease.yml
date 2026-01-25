@@ -28,10 +28,16 @@ jobs:
 
       - name: Enter prerelease mode
         run: |
-          if [[ "${GITHUB_REF_NAME}" == "beta" ]]; then
-            npx changeset pre enter beta
+          # 检查 pre.json 是否存在，如果存在则说明已经是 pre mode，无需再次 enter
+          if [ -f ".changeset/pre.json" ]; then
+            echo "Already in pre mode, skipping 'enter' command."
           else
-            npx changeset pre enter alpha
+            echo "Not in pre mode, entering..."
+            if [[ "${GITHUB_REF_NAME}" == "beta" ]]; then
+              npx changeset pre enter beta
+            else
+              npx changeset pre enter alpha
+            fi
           fi
 
       - name: Create Release PR or Publish prerelease
