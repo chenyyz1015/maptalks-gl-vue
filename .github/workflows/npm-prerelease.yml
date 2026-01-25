@@ -1,16 +1,17 @@
-name: Publish npm
+name: Publish prerelease
 
 on:
   push:
     branches:
-      - master
+      - beta
+      - alpha
 
 permissions:
   contents: write
   pull-requests: write
 
 jobs:
-  release:
+  prerelease:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +26,15 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Create Release Pull Request or Publish
+      - name: Enter prerelease mode
+        run: |
+          if [[ "${GITHUB_REF_NAME}" == "beta" ]]; then
+            npx changeset pre enter beta
+          else
+            npx changeset pre enter alpha
+          fi
+
+      - name: Create Release PR or Publish prerelease
         uses: changesets/action@v1
         with:
           publish: npm run release

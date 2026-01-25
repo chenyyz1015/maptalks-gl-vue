@@ -137,6 +137,7 @@ git checkout -b fix/your-bug-fix
 ```
 
 2. **Make Your Changes**
+
    - Write clear, concise code
    - Add comments where necessary
    - Update documentation if needed
@@ -224,6 +225,13 @@ Releases are handled by maintainers:
 3. Create git tag
 4. Publish to npm
 5. Create GitHub release
+
+## Release strategy
+
+- alpha / beta are prereleases of the next stable version
+- both share the same base version
+- no changesets are created specifically for prereleases
+- prerelease exit happens only before stable release
 
 ## Getting Help
 
