@@ -1,6 +1,6 @@
 {
   "name": "maptalks-gl-vue",
-  "version": "1.7.0",
+  "version": "1.8.0-alpha.0",
   "description": "A Vue 3 map component library based on Maptalks GL, supporting multiple map sources such as Sky Map, Google Map, OpenStreetMap, etc.",
   "type": "module",
   "main": "./dist/maptalks-gl-vue.umd.js",
