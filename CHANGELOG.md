@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.7.0-beta.0
+
+### Minor Changes
+
+- ba1690b: maptalks-gl-vue@1.7.0正式发布
+
 ## 1.6.0
 
 ### Minor Changes
