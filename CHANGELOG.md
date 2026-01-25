@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.0-beta.0
+
+### Minor Changes
+
+- b7e0ac9: maptalks-gl-vue@1.2.0正式发布
+
 All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
