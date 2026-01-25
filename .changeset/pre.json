@@ -1,0 +1,10 @@
+{
+  "mode": "pre",
+  "tag": "alpha",
+  "initialVersions": {
+    "maptalks-gl-vue": "1.7.0"
+  },
+  "changesets": [
+    "twelve-pillows-sleep"
+  ]
+}
