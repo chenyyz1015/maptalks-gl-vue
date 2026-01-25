@@ -23,6 +23,7 @@ package
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+.changeset/pre.json
 .idea
 .DS_Store
 *.suo
